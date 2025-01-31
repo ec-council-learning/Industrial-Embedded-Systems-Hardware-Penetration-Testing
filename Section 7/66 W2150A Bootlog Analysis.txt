@@ -1,0 +1,30 @@
+RedBoot(tm) bootstrap and debug environment [ROMRAM]
+Non-certified release, version FSL 200952 - built 10:15:25, Mar  7 2014
+
+Linux version 2.6.31 (root@localhost.localdomain) (gcc version 4.4.1 (Sourcery G++ Lite 2010q1-202) ) #6 PREEMPT Wed Aug 22 15:21:06 CST 2012
+
+CPU: ARM9
+
+No Soc Information
+
+No Debug Information
+
+No Bootmenu/Bootshell Access
+
+Creating 8 MTD partitions on "mxc_nor_flash.0":
+
+0x000000000000-0x000000080000 : "nor.bootloader"
+
+0x000000080000-0x000000580000 : "nor.kernel"
+
+0x000000580000-0x000001180000 : "nor.rootfs"
+
+0x000001180000-0x000001980000 : "nor.userfs"
+
+0x000001980000-0x000001a80000 : "nor.log"
+
+0x000001a80000-0x000001b20000 : "nor.config"
+
+0x000001b20000-0x000001fc0000 : "nor.reserved"
+
+0x000001fc0000-0x000002000000 : "nor.redbootConfig"

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+cd ~
+
+sudo apt-get -y update
+
+sudo apt-get install -y gem
+
+git clone https://github.com/tijldeneut/ICSSecurityScripts
+sudo gem install -y modbus-cli
+
+# redpoint scripts
+
+cd~
+git clone https://github.com/rick-cen/RedpointNSE.git
+cd RedpointNSE
+sudo cp *.nse /usr/share/nmap/scripts/
+
+#MQTT 
+cd~
+sudo apt install -y mosquitto mosquitto-clients
+git clone https://github.com/rick-cen/Moxie.git
+cd Moxie
+chmod +x moxie.sh

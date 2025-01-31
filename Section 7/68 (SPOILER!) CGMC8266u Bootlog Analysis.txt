@@ -1,0 +1,27 @@
+U-Boot 1.2.3 (May 21 2024 - 10:47:42)
+QuanTek U-Boot Version: 5.0.0.3
+
+CGMC8266u Linux-4.24.102
+Linux version 4.24.102 (oever@oever-5900hx) (gcc version 7.3.0 (OpenWrt GCC 7.3.0)) #0 SMP Wed Nov 11 10:01:11 2024
+
+CPU: MIPS
+
+SoC Type: QuanTek MC8266 ver:1 eco:3
+
+D0 Debug Pin Check...Done: Low
+
+Bootmenu disabled
+
+4 fixed-partitions partitions found on MTD device spi0.0
+Creating 4 MTD partitions on "spi0.0":
+
+0x0-0x30000 : "u-boot"
+0x30000-0x40000 : "u-boot-env"
+0x40000-0x40100 : "factory"
+0x40100-0x1000000 : "firmware"
+
+Firmware split into 
+
+0x50000-0x248b87 : "kernel"
+0x248b87-0x1000000 : "rootfs"
+0x9e0000-0x1000000 : "rootfs_data"

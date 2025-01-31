@@ -1,0 +1,41 @@
+U-Boot 1.1.3 (Dec 21 2017 - 10:47:42)
+MediaTek U-Boot Version: 5.0.0.3
+
+IXrouter3 Linux-4.14.206
+Linux version 4.14.206 (oever@oever-5900hx) (gcc version 7.3.0 (OpenWrt GCC 7.3.0 r8077-7cbbab7246)) #0 SMP Wed Nov 11 20:09:58 2020
+
+CPU: MIPS
+
+SoC Type: MediaTek MT7621 ver:1 eco:3
+
+No Debug Information
+
+Prompt 1: Press space to enter the bootloader…
+
+Prompt 2:
+Please choose the operation: 
+   0: Load system code then write to Flash via Serial.
+   1: Load system code to SDRAM via TFTP.
+   2: Load system code then write to Flash via TFTP.
+   3: Boot system code via Flash (default).
+   4: Enter boot command line interface.
+   7: Load U-Boot code then write to Flash via Serial.
+   9: Load U-Boot code then write to Flash via TFTP.
+
+You choosed 3
+ 
+
+[    1.231017] 4 fixed-partitions partitions found on MTD device spi0.0
+[    1.243681] Creating 4 MTD partitions on "spi0.0":
+[    1.253214] 0x000000000000-0x000000030000 : "u-boot"
+[    1.264259] 0x000000030000-0x000000040000 : "u-boot-env"
+[    1.275882] 0x000000040000-0x000000050000 : "factory"
+[    1.286994] 0x000000050000-0x000001000000 : "firmware"
+
+Firmware split into
+
+[    1.350161] 0x000000050000-0x000000248b87 : "kernel"
+[    1.361122] 0x000000248b87-0x000001000000 : "rootfs"
+[    1.395752] 0x0000009e0000-0x000001000000 : "rootfs_data"
+
+0x000000000100

@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Check if the correct number of arguments is provided
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <input_file> <output_file>"
+    exit 1
+fi
+
+# Input and output file from arguments
+INPUT_FILE="$1"
+OUTPUT_FILE="$2"
+
+# Function to clean up hex dump
+cleanup_hex() {
+    # Read the input file line by line
+    while IFS= read -r line; do
+        # Process each word in the line (hex value)
+        for hex_value in $line; do
+            # Ensure each hex value is two digits (prepend '0' if single digit)
+            printf "%02x " "0x$hex_value"
+        done
+        # Print a newline after each line of hex values
+        echo
+    done < "$INPUT_FILE" > "$OUTPUT_FILE"
+}
+
+# Execute the cleanup function
+cleanup_hex
+
+echo "Hex dump cleaned up and saved to $OUTPUT_FILE"
